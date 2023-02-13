@@ -25,15 +25,15 @@ public class Pizza {
         {
             this.price = 300;
             this.toppings = 70;
-            this.bill ="Base Price Of The Pizza: 300"+"\n";
+
         }
         else {
             this.price = 400;
             this.toppings=120;
-            this.bill ="Base Price Of The Pizza: 400"+"\n"+"";
+
 
         }
-
+        this.bill ="Base Price Of The Pizza: "+this.price+"\n";
         this.cheese = 80;
         // your code goes here
 
@@ -48,7 +48,7 @@ public class Pizza {
 
        if(!isCheeseAdded)
        {
-           this.price +=cheese;
+           this.price +=this.cheese;
            isCheeseAdded = true;
        }
 
@@ -59,15 +59,9 @@ public class Pizza {
         // your code goes here
         if(!isToppingsAdded)
         {
-            if(isVeg)
-            {
-                this.price +=70;
 
-            }
-            else{
-                this.price += 120;
+            this.price +=this.toppings;
 
-            }
             isToppingsAdded =true;
 
         }
