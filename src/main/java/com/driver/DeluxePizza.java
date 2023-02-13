@@ -9,13 +9,13 @@ public class DeluxePizza extends Pizza {
         super.flag_tops = false;
         if(isVeg)
         {
-            int cheesetops = 150;
-            setPrice(getPrice()+cheesetops);
+            int cheese_tops = 70+80;
+            setPrice(getPrice()+cheese_tops);
         }
         else
         {
-            int cheesetops =200;
-            setPrice(getPrice()+cheesetops);
+            int cheese_tops =120+80;
+            setPrice(getPrice()+cheese_tops);
         }
 
         // your code goes here

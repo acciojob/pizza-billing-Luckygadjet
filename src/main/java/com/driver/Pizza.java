@@ -73,11 +73,11 @@ public class Pizza {
         // your code goes here
         if(isVeg)
         {
-            this.bill = "Base Price Of The Pizza: 300\nExtra Cheese Added: 80\nExtra Toppings Added: 70\nPaperbag Added: 20\nTotal Price: "+this.price;
+            this.bill = "Base Price Of The Pizza: 300\nExtra Cheese Added: 80\nExtra Toppings Added: 70\nPaperbag Added: 20\nTotal Price: "+getPrice()+"\n";
         }
         else
         {
-            this.bill = "Base Price Of The Pizza: 400\nExtra Cheese Added: 80\nExtra Toppings Added: 120\nPaperbag Added: 20\nTotal Price: "+this.price;
+            this.bill = "Base Price Of The Pizza: 400\nExtra Cheese Added: 80\nExtra Toppings Added: 120\nPaperbag Added: 20\nTotal Price: "+getPrice()+"\n";
         }
 
         return this.bill;
